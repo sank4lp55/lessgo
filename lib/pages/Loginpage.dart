@@ -61,7 +61,7 @@ class _LoginpageState extends State<Loginpage> {
                     child: Column(
                       children: [
                         TextFormField(
-                          decoration: InputDecoration(hintText: "Enter name"),
+                          decoration: InputDecoration(hintText: "Enter Name"),
                           validator: (String? value) {
                             if (value!.isEmpty) {
                               // null safety

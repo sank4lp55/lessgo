@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lessgo/widgets/drawer.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -8,15 +9,16 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar( 
+      appBar: AppBar(
         title: Text("My app"),
+        backgroundColor: Color.fromRGBO(108, 100, 251, 0.95),
       ),
       body: Center(
-        child: Container( 
+        child: Container(
           child: Text('I am $name and my fucking age is $age'),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
