@@ -10,12 +10,19 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("My app"),
-        backgroundColor: Color.fromRGBO(108, 100, 251, 0.95),
+        title: Padding(
+          padding: const EdgeInsets.all(75.0),
+          child: Text(
+            "Catalog App",
+          ),
+        ),
       ),
       body: Center(
         child: Container(
-          child: Text('I am $name and my fucking age is $age'),
+          child: Text(
+            'I am $name and my fucking age is $age',
+            style: TextStyle(color: Colors.black),
+          ),
         ),
       ),
       drawer: MyDrawer(),

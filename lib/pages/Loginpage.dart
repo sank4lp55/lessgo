@@ -102,7 +102,7 @@ class _LoginpageState extends State<Loginpage> {
                   InkWell(
                     onTap: () => moveHome(context),
                     child: AnimatedContainer(
-                      duration: Duration(seconds: 1),
+                      duration: Duration(milliseconds: 250),
                       alignment: Alignment.center,
                       width: changeButton ? 37 : 110,
                       height: 37,

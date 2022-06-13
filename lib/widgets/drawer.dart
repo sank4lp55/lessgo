@@ -18,7 +18,7 @@ class MyDrawer extends StatelessWidget {
             ),
             child: UserAccountsDrawerHeader(
               decoration: BoxDecoration(
-                color: Color.fromRGBO(108, 100, 251, 0.95),
+                color: Color.fromRGBO(108, 100, 251, 0.96),
               ),
               accountName:
                   Text("Sankalp Srivastava", style: TextStyle(fontSize: 20)),

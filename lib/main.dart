@@ -3,6 +3,7 @@ import 'package:lessgo/pages/Homepage.dart';
 import 'package:lessgo/pages/Loginpage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lessgo/utils/routes.dart';
+import 'package:lessgo/widgets/themes.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,11 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: MyTheme.lightTheme,
+      darkTheme: MyTheme.darkTheme,
       initialRoute: MyRoutes.homeRoute,
       debugShowCheckedModeBanner: false,
       routes: {
